@@ -1,0 +1,166 @@
+<html>
+<head>
+<script>
+var txt = "";
+function message() {
+    try {
+        adddlert("Welcome guest!");
+    }
+    catch(err) {
+        txt = "Šobrīd tu pēti manu mājaslapu.\n\n";
+        txt += "Spied Labi, lai turpinātu skatīties,\n";
+        txt += "vai spied Atcelt, lai atgrieztos sākumā.\n\n";
+        if(!confirm(txt)) {
+            document.location.href = "index.html";
+        }
+    }
+}
+</script>
+<script>
+function confirmInput() {
+    fname = document.forms[0].fname.value;
+    alert("Labdien, " + fname + ", Jauku dienu!");
+}
+</script>
+<title>Nils Melbārdis</title>
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<link href="kodi.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="checkCookie()">
+<div id='main'>
+	<div class='top'><img src="logo_agenskalns.JPG" width="80" height="80" />
+	<img src="avg.JPG" width="110" height="80" />
+	<img src="ll_2549.jpg" width="110" height="80" />
+	<p class="logo"> Mani kodi </p>
+	</div>
+	<div class='Left'>
+<ul style="list-style-type:none">
+<br>
+ <li><a href="index.html" class="sak">Sākums</a></li>
+<br>
+<br>
+ <li><a class="tab" href="tabula.html">Tabula</a></li>
+<br>
+<br>
+ <li><a class="gimp" href="gimp.html">Gimp</a></li>
+ <br>
+ <br>
+ <li><a class="ink" href="ink.html">Inkscape</a></li>
+ <br>
+ <br>
+ <li><a class="form" href="forma.html">Forma</a></li>
+ <br>
+ <br>
+ <li><a class="kodi" href="kodi.html">Mani kodi</a></li>
+ <br>
+ <br>
+ <li> <a class="box" href="box.html">Light box</a></li>
+ </ul>
+
+	</div> 
+
+	<div class='Right'>
+	<br>
+	<br>
+	<div id="mydiv">
+<input type="button" value="View message" onclick="message()"/>
+<form onsubmit="confirmInput()" action="kodi.html">
+</div>
+<br>
+<br>
+<b class="vards">Ievadi savu vārdu: <input id="fname" type="text"></b>
+<input type="submit">
+</form>
+<br>
+<br>
+<div class="topnav">
+  <div class="search-container">
+	 <form action="index.html">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+	</div>
+</div>	
+<body>
+</html>
